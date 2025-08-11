@@ -1,0 +1,19 @@
+# Configuração de Deploy ECS - Projeto BIA
+# Copie este arquivo para deploy-config e ajuste conforme necessário
+
+# Configurações AWS
+export AWS_REGION="us-east-1"
+export AWS_PROFILE="default"
+
+# Configurações ECS
+export ECS_CLUSTER="bia-cluster-alb"
+export ECS_SERVICE="bia-service"
+export ECS_TASK_FAMILY="bia-tf"
+
+# Configurações ECR
+export ECR_REPOSITORY="bia"
+
+# Para usar este arquivo:
+# 1. Copie para deploy-config: cp deploy-config.example deploy-config
+# 2. Ajuste as configurações conforme seu ambiente
+# 3. Execute: source deploy-config && ./deploy-ecs.sh deploy
