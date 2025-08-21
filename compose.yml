@@ -1,7 +1,7 @@
 services:
   server:
     build: .
-    container_name: bia-container
+    container_name: bia
     ports:
       - 3001:8080
     links:
